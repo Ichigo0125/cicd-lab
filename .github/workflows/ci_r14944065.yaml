@@ -38,7 +38,7 @@ jobs:
         run: npx eslint "src/**/*.ts" --ext .ts
 
       - name: Prettier check
-        run: npm run format:check
+        run: npx prettier --check "src/**/*.ts"
 
   typecheck:
     runs-on: ubuntu-latest
